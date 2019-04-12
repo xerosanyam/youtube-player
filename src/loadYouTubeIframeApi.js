@@ -17,7 +17,7 @@ export default (emitter: EmitterType): Promise<IframeApiType> => {
 
       return;
     } else {
-      const protocol = window.location.protocol === 'http:' ? 'http:' : 'https:';
+      const protocol = 'https:';
 
       load(protocol + '//www.youtube.com/iframe_api', (error) => {
         if (error) {
